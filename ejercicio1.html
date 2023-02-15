@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <script>
+        var alumno, p1;
+        let mensaje = "";
+        alert ("PRIMER EJERCIIIOOOOOOOOOO")
+        alumno = prompt("ingrese el nombre del alumno");
+        p1 = prompt("ingrese el peso del alumno ");
+        document.write("el peso de " + alumno + " en kg es : " + p1);
+
+        if (p1 < 40) {
+            document.write('<br>',"Estas en un peso de menos de 40kg, estas desnutrido");
+        } else if (p1 <=50) {
+            document.write('<br>',"Estas entre 40 y 50 kg, podria ser mejor tu peso, te recomiendo comer mas");
+        } else if (p1 <60){
+            document.write('<br>', "Estas entre 51 y 59 kg, buen peso");
+        } else{
+            document.write('<br>', "Estas pesando 60kg o mas, deberias bajar de peso");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

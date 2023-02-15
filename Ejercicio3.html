@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <script>
+        var nombre, id, id1, promedio1, promedio2, promedio3, promedio4, promedio5, promedio6, media, media1, notaM, notaM1, notaF, notaF1, notaP, notaP1, A1, A2, n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13, n14, n15, n16, n17, n18;
+        A1 = prompt("Ingrese el nombre del alumno 1 ");
+        document.write("El nombre del alumno es: " + A1);
+        id = prompt("Ingrese la cedula del alumno 1 ");
+        document.write('<br>', "La cedula del alumno es: " + id);
+        n1 = parseFloat(prompt("Ingrese la primera nota de matematicas"));
+        n2 = parseFloat(prompt("Ingrese la segunda nota de matematicas"));
+        n3 = parseFloat(prompt("Ingrese la tercera nota de matematicas"));
+        //otra materia
+        n4 = parseFloat(prompt("Ingrese la primera nota de fisica"));
+        n5 = parseFloat(prompt("Ingrese la segunda nota de fisica"));
+        n6 = parseFloat(prompt("Ingrese la tercera nota de fisica"));
+        //otra materia
+        n7 = parseFloat(prompt("Ingrese la primera nota de programacion"));
+        n8 = parseFloat(prompt("Ingrese la segunda nota de programacion"));
+        n9 = parseFloat(prompt("Ingrese la tercera nota de programacion"));
+
+        promedio1 = (n1 + n2 + n3) / 3;
+        notaM = promedio1;
+
+        if (promedio1 >= 10) {
+            document.write('<br>', " En Matematicas el promedio de " + A1 + "  es " + promedio1 + ", esta APROBADO");
+        } else {
+            document.write('<br>', "En Matematicas el promedio de " + A1 + "  es " + promedio1 + ", esta REPROBADO");
+        }
+        document.write('<br>', " La nota de matematicas es :" + notaM);
+        //otra materia
+        promedio2 = (n4 + n5 + n6) / 3;
+        notaF = promedio2;
+
+        if (promedio2 >= 10) {
+            document.write('<br>', "En fisica el promedio de " + A1 + "  es " + promedio2 + ", esta APROBADO");
+        } else {
+            document.write('<br>', "En fisica el promedio de " + A1 + "  es " + promedio2 + ", esta REPROBADO");
+        }
+        document.write('<br>', " La nota de fisica es :" + notaF);
+        //otra materia
+        promedio3 = (n7 + n8 + n9) / 3;
+        notaP = promedio3;
+
+        if (promedio3 >= 10) {
+            document.write('<br>', "En programacion el promedio de " + A1 + "  es " + promedio3 + ", esta APROBADO");
+        } else {
+            document.write('<br>', "En programacion el promedio de " + A1 + "  es " + promedio3 + ", esta REPROBADO");
+        }
+        document.write('<br>', " La nota de programacion es :" + notaP);
+
+        media = (notaF + notaM + notaP) / 3;
+        document.write('<br>', "El promedio general es: " + media);
+
+        //otro alumno
+        document.write('<br>', "---------------------");
+        A2 = prompt("Ingrese el nombre del alumno 2 ");
+        document.write('<br>', "El nombre del alumno es: " + A2);
+        id1 = prompt("Ingrese la cedula del alumno 2 ");
+        document.write('<br>', "La cedula del alumno es: " + id1);
+        n10 = parseFloat(prompt("Ingrese la primera nota de matematicas"));
+        n11 = parseFloat(prompt("Ingrese la segunda nota de matematicas"));
+        n12 = parseFloat(prompt("Ingrese la tercera nota de matematicas"));
+        //otra materia
+        n13 = parseFloat(prompt("Ingrese la primera nota de fisica"));
+        n14 = parseFloat(prompt("Ingrese la segunda nota de fisica"));
+        n15 = parseFloat(prompt("Ingrese la tercera nota de fisica"));
+        //otra materia
+        n16 = parseFloat(prompt("Ingrese la primera nota de programacion"));
+        n17 = parseFloat(prompt("Ingrese la segunda nota de programacion"));
+        n18 = parseFloat(prompt("Ingrese la tercera nota de programacion"));
+
+        promedio4 = (n10 + n11 + n12) / 3;
+        notaM1 = promedio4;
+
+        if (promedio4 >= 10) {
+            document.write('<br>', " En Matematicas el promedio de " + A2 + "  es " + promedio4 + ", esta APROBADO");
+        } else {
+            document.write('<br>', "En Matematicas el promedio de " + A2 + "  es " + promedio4 + ", esta REPROBADO");
+        }
+        document.write('<br>', " La nota de matematicas es :" + notaM1);
+        //otra materia
+        promedio5 = (n13 + n14 + n15) / 3;
+        notaF1 = promedio5;
+
+        if (promedio5 >= 10) {
+            document.write('<br>', "En fisica el promedio de " + A2 + "  es " + promedio5 + ", esta APROBADO");
+        } else {
+            document.write('<br>', "En fisica el promedio de " + A2 + "  es " + promedio5 + ", esta REPROBADO");
+        }
+        document.write('<br>', " La nota de fisica es :" + notaF1);
+
+        //otra materia
+        promedio6 = (n16 + n17 + n18) / 3;
+        notaP1 = promedio6;
+
+        if (promedio6 >= 10) {
+            document.write('<br>', "En programacion el promedio de " + A2 + "  es " + promedio6 + ", esta APROBADO");
+        } else {
+            document.write('<br>', "En programacion el promedio de " + A2 + "  es " + promedio6 + ", esta REPROBADO");
+        }
+        document.write('<br>', " La nota de programacion es :" + notaP1);
+
+        media1 = (notaF1 + notaM1 + notaP1) / 3;
+        document.write('<br>', "El promedio general es: " + media1);
+
+
+        //promedio mas alto
+        document.write('<br>', "-------------------------------")
+        if (media > media1) {
+            document.write('<br>', "el promedio mas alto lo tuvo:  " + A1 + "  con: " + media);
+        } else {
+            document.write('<br>', "el promedio mas alto lo tuvo:  " + A2 + "  con: " + media1)
+        }
+
+        //nota maxima
+        document.write('<br>', "-------------------------------")
+        if (notaM > notaM1) {
+            document.write('<br>', "la nota mas alta en matematicas la tuvo:  " + A1 + "  con: " + notaM);
+        } else {
+            document.write('<br>', "la nota mas alta en matematicas la tuvo:  " + A2 + "  con: " + notaM1)
+        }
+        document.write('<br>', "-------------------------------")
+        if (notaF > notaF1) {
+            document.write('<br>', "la nota mas alta en fisica la tuvo:  " + A1 + "  con: " + notaF);
+        } else {
+            document.write('<br>', "la nota mas alta en fisica la tuvo:  " + A2 + "  con: " + notaF1)
+        }
+        document.write('<br>', "-------------------------------")
+        if (notaP > notaP1) {
+            document.write('<br>', "la nota mas alta en programacion la tuvo:  " + A1 + "  con: " + notaP);
+        } else {
+            document.write('<br>', "la nota mas alta en programacion la tuvo:  " + A2 + "  con: " + notaP1)
+        }
+        
+        //aprobados en cada materia
+        if(media<10){
+            document.write('<br>',"el alumno "+ A1 + "reprobo todas las materias");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
